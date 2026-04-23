@@ -1,0 +1,92 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const description =
+  'Notes and reflections from Aya Toriyama on building quiet community in apartment buildings — field observations, essays, and thinking that shapes the Ochakai practice.';
+
+const entries = [
+  {
+    slug: 'both-sides-were-waiting',
+    title: 'Both sides were waiting for the other to act.',
+    excerpt:
+      "A reflection on the quiet start of Ochakai — how a single knock on a neighbour's door in The Hague revealed that the warmth was already there, waiting for someone to make the first move.",
+    date: '16 March 2026',
+    dateISO: '2026-03-16',
+    kind: 'Reflection',
+    readingMinutes: 4,
+  },
+];
+---
+
+<DefaultLayout title="Journal | Ochakai" description={description}>
+  <!-- Intro -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28 lg:py-32">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
+        >
+          Journal — 日記
+        </p>
+        <h1
+          class="font-display text-foreground text-4xl leading-[1.08] tracking-tight md:text-5xl lg:text-[56px] lg:leading-[1.05]"
+        >
+          Notes from the practice.
+        </h1>
+        <p
+          class="text-muted-foreground mt-8 max-w-2xl text-lg leading-relaxed md:text-xl"
+        >
+          Field observations, reflections, and short essays from Aya on the
+          small mechanics of neighbourly connection — what works in a building,
+          what doesn't, and why.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entries -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-3xl">
+        <ul class="divide-border/60 divide-y">
+          {
+            entries.map((entry) => (
+              <li>
+                <a
+                  href={`/journal/${entry.slug}`}
+                  class="group block py-10 transition-colors first:pt-0 last:pb-0"
+                >
+                  <div class="flex items-center gap-3">
+                    <p class="text-muted-foreground text-xs font-medium tracking-[0.16em] uppercase">
+                      {entry.kind}
+                    </p>
+                    <span class="text-border">·</span>
+                    <time
+                      datetime={entry.dateISO}
+                      class="text-muted-foreground text-xs font-medium tracking-wide uppercase"
+                    >
+                      {entry.date}
+                    </time>
+                    <span class="text-border">·</span>
+                    <p class="text-muted-foreground text-xs font-medium tracking-wide uppercase">
+                      {entry.readingMinutes} min read
+                    </p>
+                  </div>
+                  <h2 class="font-display text-foreground group-hover:text-primary mt-4 text-2xl leading-tight tracking-tight transition-colors md:text-3xl lg:text-[34px] lg:leading-[1.12]">
+                    {entry.title}
+                  </h2>
+                  <p class="text-muted-foreground mt-4 max-w-2xl text-base leading-relaxed md:text-lg">
+                    {entry.excerpt}
+                  </p>
+                  <span class="text-foreground group-hover:text-primary mt-6 inline-flex items-center gap-2 text-sm font-medium transition-colors">
+                    Read →
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>

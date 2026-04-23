@@ -1,0 +1,18 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import { CtaBand } from '@/components/sections/cta-band';
+import { Hero } from '@/components/sections/hero';
+import { Impact } from '@/components/sections/impact';
+import { Mission } from '@/components/sections/mission';
+import { ServicesTeaser } from '@/components/sections/services-teaser';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <Hero />
+  <Mission />
+  <ServicesTeaser />
+  <Impact />
+  <CtaBand />
+</DefaultLayout>

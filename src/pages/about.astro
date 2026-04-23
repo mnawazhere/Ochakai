@@ -1,0 +1,166 @@
+---
+import { CtaBand } from '@/components/sections/cta-band';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const description =
+  'Ochakai is founded by Aya Toriyama, a Japanese community practitioner based in The Hague. The applied continuation of her research on sense of belonging in urban housing.';
+---
+
+<DefaultLayout title="About | Ochakai" description={description}>
+  <!-- Origin story -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28 lg:py-32">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
+        >
+          About — 私たちについて
+        </p>
+        <h1
+          class="font-display text-foreground text-4xl leading-[1.08] tracking-tight md:text-5xl lg:text-[56px] lg:leading-[1.05]"
+        >
+          Why tea, specifically.
+        </h1>
+        <div
+          class="text-foreground mt-10 space-y-6 text-lg leading-relaxed md:text-xl"
+        >
+          <p>
+            The tea ceremony has a small history: feudal-era samurai were asked
+            to leave their weapons outside before entering the tea room. Inside,
+            rank was suspended. Everyone drank from the same bowl, on the same
+            floor, in the same quiet.
+          </p>
+          <p>
+            Ochakai borrows from that tradition — not as aesthetic, but as
+            method. The idea is that a <span lang="ja">安全な場</span>
+            <em class="text-muted-foreground not-italic"
+              >(anzen na ba — a place of safety)</em
+            > has to be built, deliberately, before neighbours can meet each other
+            as themselves. Tea is one way to build it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Aya -->
+  <section class="border-border/60 bg-card border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
+        >
+          Meet Aya
+        </p>
+        <h2
+          class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px]"
+        >
+          Aya Toriyama
+        </h2>
+        <p
+          class="text-muted-foreground mt-3 text-base font-medium tracking-wide uppercase"
+        >
+          Founder · Practitioner · Researcher
+        </p>
+
+        <div class="text-foreground mt-10 space-y-6 text-lg leading-relaxed">
+          <p>
+            A Japanese community practitioner based in The Hague, and the person
+            who hosts every Ochakai gathering. She started the practice in her
+            own housing in July 2025, after noticing how rarely her neighbours
+            met each other — despite sharing walls, stairwells, and courtyards
+            for years.
+          </p>
+          <p>
+            Aya holds an MSc in Urban Management & Development from Erasmus /
+            IHS. Her thesis examined sense of belonging and the physiological
+            benefits of public transportation — Ochakai is the applied
+            continuation of that research, moved out of the academy and into
+            apartment buildings.
+          </p>
+          <p>
+            Before Ochakai, she led cross-cultural community work at scale:
+            coordinating a 45-person team at Gamers8 JapaMura in Riyadh, and
+            years of youth education and volunteer coordination in Kyoto and
+            abroad. She brings the same care to a single tea gathering that she
+            brought to those larger rooms.
+          </p>
+        </div>
+
+        <a
+          href="https://www.linkedin.com/company/ochakai/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-foreground hover:text-primary mt-10 inline-flex items-center gap-2 text-base font-medium transition-colors"
+        >
+          Follow Ochakai on LinkedIn →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How we work -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
+        >
+          How we work
+        </p>
+        <h2
+          class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px]"
+        >
+          Small, repeatable, led by what residents say they need.
+        </h2>
+
+        <div class="mt-12 space-y-10">
+          <div class="border-primary/40 border-l-2 pl-6">
+            <h3
+              class="font-display text-foreground text-xl leading-tight md:text-2xl"
+            >
+              Grounded in user research with residents.
+            </h3>
+            <p class="text-muted-foreground mt-3 text-base leading-relaxed">
+              We don't arrive with a programme. We talk to the people who live
+              in the building, and design the intervention around what they
+              actually want a neighbour to be.
+            </p>
+          </div>
+
+          <div class="border-primary/40 border-l-2 pl-6">
+            <h3
+              class="font-display text-foreground text-xl leading-tight md:text-2xl"
+            >
+              Small, repeatable, low-tech interventions.
+            </h3>
+            <p class="text-muted-foreground mt-3 text-base leading-relaxed">
+              A tea gathering. A simple channel. A seasonal ritual. Nothing that
+              needs a platform or an app to work. Things that can be run by the
+              housing org after we're gone.
+            </p>
+          </div>
+
+          <div class="border-primary/40 border-l-2 pl-6">
+            <h3
+              class="font-display text-foreground text-xl leading-tight md:text-2xl"
+            >
+              Prototype, pilot, then a framework you can keep.
+            </h3>
+            <p class="text-muted-foreground mt-3 text-base leading-relaxed">
+              Engagements end with a programme your team can run in other
+              buildings — not a dependency on ours.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-muted-foreground mt-16 text-base italic">
+          Open to collaborating with practitioners, housing organisations, and
+          researchers working on urban belonging.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</DefaultLayout>

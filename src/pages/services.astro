@@ -1,0 +1,230 @@
+---
+import { SITE_METADATA } from '../consts';
+import { CtaBand } from '@/components/sections/cta-band';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const title = `Services | ${SITE_METADATA.title.template.replace('%s | ', '').replace(' | Ochakai', 'Ochakai')}`;
+const description =
+  'Three culturally rooted formats — a single tea gathering, communication tools between events, and long-term engagement support — that help housing organisations build neighbourly connection.';
+---
+
+<DefaultLayout title="Services | Ochakai" description={description}>
+  <!-- Page intro -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28 lg:py-32">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
+        >
+          Services — サービス
+        </p>
+        <h1
+          class="font-display text-foreground text-4xl leading-[1.08] tracking-tight md:text-5xl lg:text-[56px] lg:leading-[1.05]"
+        >
+          Small interventions, designed to be honest and repeatable.
+        </h1>
+        <p
+          class="text-muted-foreground mt-8 max-w-2xl text-lg leading-relaxed md:text-xl"
+        >
+          Ochakai partners with organisations to design and host small-scale
+          interventions that foster neighbourly connection. Whether you need a
+          single event, a pilot project, or a long-term engagement strategy, our
+          formats are easy to implement, culturally rooted, and adaptable to
+          different residential settings.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 1: The tea gathering -->
+  <section class="border-border/60 bg-card border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-4xl">
+        <div class="md:grid md:grid-cols-[1fr_2fr] md:gap-16">
+          <div class="mb-6 md:mb-0">
+            <p
+              class="text-muted-foreground mb-2 text-xs font-medium tracking-[0.18em] uppercase"
+            >
+              01
+            </p>
+            <p class="text-muted-foreground font-medium" lang="ja">
+              お茶会
+            </p>
+          </div>
+          <div>
+            <h2
+              class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px] lg:leading-[1.08]"
+            >
+              The tea gathering
+            </h2>
+            <p class="text-muted-foreground mt-6 text-lg leading-relaxed">
+              A single, quiet matcha ceremony hosted for the residents of your
+              building. Rooted in the Japanese tradition of ochakai — a small
+              gathering built around tea — adapted for the courtyards and
+              community rooms of contemporary housing.
+            </p>
+
+            <div class="mt-10 space-y-4">
+              <h3
+                class="text-foreground text-sm font-semibold tracking-[0.08em] uppercase"
+              >
+                Good for
+              </h3>
+              <ul class="text-foreground space-y-2 text-base leading-relaxed">
+                <li>
+                  — A housing org hosting a welcome event for new residents
+                </li>
+                <li>
+                  — A cooperative wanting a low-pressure way to introduce
+                  neighbours
+                </li>
+                <li>
+                  — A pilot moment to test whether your community is ready for
+                  more
+                </li>
+              </ul>
+            </div>
+
+            <!-- What's included — turnkey framing -->
+            <div class="border-primary/30 mt-12 border-l-2 pl-6">
+              <h3
+                class="text-foreground text-sm font-semibold tracking-[0.08em] uppercase"
+              >
+                What's included
+              </h3>
+              <p class="text-foreground mt-4 text-lg leading-relaxed">
+                We bring everything — matcha, bowls, bamboo whisks, cloths, the
+                quiet ceremony itself. All you need is a room and neighbours
+                willing to show up.
+              </p>
+            </div>
+
+            <div class="text-muted-foreground mt-10 text-base italic">
+              Impact observed in past pilots — neighbours who had lived on the
+              same floor for years introduced themselves for the first time.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 2: Between gatherings -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-4xl">
+        <div class="md:grid md:grid-cols-[1fr_2fr] md:gap-16">
+          <div class="mb-6 md:mb-0">
+            <p
+              class="text-muted-foreground mb-2 text-xs font-medium tracking-[0.18em] uppercase"
+            >
+              02
+            </p>
+            <p class="text-muted-foreground font-medium" lang="ja">
+              日常のつながり
+            </p>
+          </div>
+          <div>
+            <h2
+              class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px] lg:leading-[1.08]"
+            >
+              Between gatherings
+            </h2>
+            <p class="text-muted-foreground mt-6 text-lg leading-relaxed">
+              Communication tools and small rituals that carry the connection
+              forward in the weeks and months between events. Low-tech where
+              possible. Designed so residents shape the channel, not the other
+              way around.
+            </p>
+
+            <div class="mt-10 space-y-4">
+              <h3
+                class="text-foreground text-sm font-semibold tracking-[0.08em] uppercase"
+              >
+                Good for
+              </h3>
+              <ul class="text-foreground space-y-2 text-base leading-relaxed">
+                <li>
+                  — Buildings where neighbours meet once, then lose touch
+                </li>
+                <li>
+                  — A housing manager wanting a resident-led channel without
+                  moderating every post
+                </li>
+                <li>
+                  — Experimenting with what "staying in touch" looks like in
+                  your particular building
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-muted-foreground mt-10 text-base italic">
+              Impact observed in past pilots — one building started a quiet
+              channel for sharing what was growing on their balconies.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 3: Over a season -->
+  <section class="border-border/60 bg-card border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-4xl">
+        <div class="md:grid md:grid-cols-[1fr_2fr] md:gap-16">
+          <div class="mb-6 md:mb-0">
+            <p
+              class="text-muted-foreground mb-2 text-xs font-medium tracking-[0.18em] uppercase"
+            >
+              03
+            </p>
+            <p class="text-muted-foreground font-medium" lang="ja">
+              季節を通して
+            </p>
+          </div>
+          <div>
+            <h2
+              class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px] lg:leading-[1.08]"
+            >
+              Over a season
+            </h2>
+            <p class="text-muted-foreground mt-6 text-lg leading-relaxed">
+              A longer engagement — pilot programmes, user research with
+              residents, and frameworks your team can continue running without
+              us. We design it with you, run it together, then hand it off.
+            </p>
+
+            <div class="mt-10 space-y-4">
+              <h3
+                class="text-foreground text-sm font-semibold tracking-[0.08em] uppercase"
+              >
+                Good for
+              </h3>
+              <ul class="text-foreground space-y-2 text-base leading-relaxed">
+                <li>
+                  — Housing orgs piloting a new resident-engagement strategy
+                </li>
+                <li>
+                  — Research partners exploring sense of belonging in urban
+                  housing
+                </li>
+                <li>
+                  — Teams who want a community programme they can run in their
+                  own buildings next year
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-muted-foreground mt-10 text-base italic">
+              Impact observed in past pilots — a resident began lending tools to
+              the person across the hall the week after our first gathering.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</DefaultLayout>
