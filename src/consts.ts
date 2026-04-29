@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = 'Ochakai — Activating Urban Connections';
 export const SITE_DESCRIPTION =
-  'Ochakai helps housing organisations build community in their buildings through small gatherings, communication tools, and long-term engagement support.';
+  'Ochakai helps organisations build resident-led community systems and hands them over to residents to sustain independently.';
 
 export const SITE_METADATA = {
   title: {

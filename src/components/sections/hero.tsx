@@ -43,17 +43,16 @@ export function Hero() {
             </p>
 
             <h1 className="font-display text-4xl leading-[1.08] tracking-tight text-[#F5F1E8] md:text-5xl lg:text-[68px] lg:leading-[1.04]">
-              Neighbours meeting over tea.
+              Residents who support one another.
               <br className="hidden md:inline" />{' '}
               <span className="text-[#C4B896]">
-                Buildings that feel like home.
+                Neighbours who can rely on each other.
               </span>
             </h1>
 
             <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-[#F5F1E8]/85 md:text-lg lg:text-xl">
-              Ochakai helps housing organisations build community in their
-              buildings through small gatherings, communication tools, and
-              long-term engagement support.
+              Ochakai helps organisations build resident-led community systems
+              and hands them over to residents to sustain independently.
             </p>
 
             <div className="mt-10 flex items-center justify-center">

@@ -3,87 +3,52 @@ import { CtaBand } from '@/components/sections/cta-band';
 import DefaultLayout from '@/layouts/DefaultLayout.astro';
 
 const description =
-  'Ochakai is founded by Aya Toriyama, a Japanese community practitioner based in The Hague. The applied continuation of her research on sense of belonging in urban housing.';
+  'Ochakai is founded by Aya Toriyama, a Japanese practitioner based in The Hague — the practical extension of her research on urban belonging and everyday mobility.';
 ---
 
 <DefaultLayout title="About | Ochakai" description={description}>
-  <!-- Origin story -->
+  <!-- Meet Aya -->
   <section class="border-border/60 border-b">
     <div class="container py-20 md:py-28 lg:py-32">
       <div class="mx-auto max-w-3xl">
         <p
           class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
+          lang="ja"
         >
-          About — 私たちについて
+          About — お茶会について
         </p>
         <h1
           class="font-display text-foreground text-4xl leading-[1.08] tracking-tight md:text-5xl lg:text-[56px] lg:leading-[1.05]"
         >
-          Why tea, specifically.
-        </h1>
-        <div
-          class="text-foreground mt-10 space-y-6 text-lg leading-relaxed md:text-xl"
-        >
-          <p>
-            The tea ceremony has a small history: feudal-era samurai were asked
-            to leave their weapons outside before entering the tea room. Inside,
-            rank was suspended. Everyone drank from the same bowl, on the same
-            floor, in the same quiet.
-          </p>
-          <p>
-            Ochakai borrows from that tradition — not as aesthetic, but as
-            method. The idea is that a <span lang="ja">安全な場</span>
-            <em class="text-muted-foreground not-italic"
-              >(anzen na ba — a place of safety)</em
-            > has to be built, deliberately, before neighbours can meet each other
-            as themselves. Tea is one way to build it.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Meet Aya -->
-  <section class="border-border/60 bg-card border-b">
-    <div class="container py-20 md:py-28">
-      <div class="mx-auto max-w-3xl">
-        <p
-          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
-        >
-          Meet Aya
-        </p>
-        <h2
-          class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px]"
-        >
           Aya Toriyama
-        </h2>
+        </h1>
         <p
-          class="text-muted-foreground mt-3 text-base font-medium tracking-wide uppercase"
+          class="text-muted-foreground mt-4 text-base font-medium tracking-wide uppercase"
         >
-          Founder · Practitioner · Researcher
+          Founder · Practitioner · Research-based designer
         </p>
 
         <div class="text-foreground mt-10 space-y-6 text-lg leading-relaxed">
           <p>
-            A Japanese community practitioner based in The Hague, and the person
-            who hosts every Ochakai gathering. She started the practice in her
-            own housing in July 2025, after noticing how rarely her neighbours
-            met each other — despite sharing walls, stairwells, and courtyards
-            for years.
+            Aya Toriyama is a Japanese practitioner based in The Hague. She
+            started Ochakai in her own residential building in 2024, after
+            noticing how rarely neighbours connected despite sharing the same
+            physical spaces — and asking herself what it would actually take to
+            change that.
           </p>
           <p>
-            Aya holds an MSc in Urban Management & Development from Erasmus /
-            IHS. Her thesis examined sense of belonging and the physiological
-            benefits of public transportation — Ochakai is the applied
-            continuation of that research, moved out of the academy and into
-            apartment buildings.
+            She holds an MSc in Urban Management & Development from Erasmus
+            University / IHS. Her research focused on belonging in urban
+            environments and the role of everyday mobility in shaping social
+            and psychological wellbeing. Ochakai emerged as a practical
+            extension of that work, moving from research into real residential
+            settings.
           </p>
           <p>
-            Before Ochakai, she led cross-cultural community work at scale:
-            coordinating a 45-person team at Gamers8 JapaMura in Riyadh, and
-            years of youth education and volunteer coordination in Kyoto and
-            abroad. She brings the same care to a single tea gathering that she
-            brought to those larger rooms.
+            Previously, she worked in cross-cultural community and engagement
+            roles across Japan, the Middle East, and Europe, exploring how
+            people feel safe enough to connect across cultural and spatial
+            boundaries.
           </p>
         </div>
 
@@ -100,7 +65,7 @@ const description =
   </section>
 
   <!-- How we work -->
-  <section class="border-border/60 border-b">
+  <section class="border-border/60 bg-card border-b">
     <div class="container py-20 md:py-28">
       <div class="mx-auto max-w-3xl">
         <p
@@ -111,7 +76,7 @@ const description =
         <h2
           class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px]"
         >
-          Small, repeatable, led by what residents say they need.
+          Ochakai's approach is built on three principles.
         </h2>
 
         <div class="mt-12 space-y-10">
@@ -119,12 +84,14 @@ const description =
             <h3
               class="font-display text-foreground text-xl leading-tight md:text-2xl"
             >
-              Grounded in user research with residents.
+              Start with lived experience.
             </h3>
             <p class="text-muted-foreground mt-3 text-base leading-relaxed">
-              We don't arrive with a programme. We talk to the people who live
-              in the building, and design the intervention around what they
-              actually want a neighbour to be.
+              We begin by understanding how residents actually experience
+              everyday life in their building — how proximity feels, where
+              interaction naturally happens, and what makes connection feel
+              safe or unlikely. The pilot is designed around that reality, not
+              around assumptions.
             </p>
           </div>
 
@@ -132,12 +99,14 @@ const description =
             <h3
               class="font-display text-foreground text-xl leading-tight md:text-2xl"
             >
-              Small, repeatable, low-tech interventions.
+              Keep it lightweight.
             </h3>
             <p class="text-muted-foreground mt-3 text-base leading-relaxed">
-              A tea gathering. A simple channel. A seasonal ritual. Nothing that
-              needs a platform or an app to work. Things that can be run by the
-              housing org after we're gone.
+              We introduce simple, low-barrier structures — small gatherings,
+              shared communication spaces, recurring touchpoints — that fit
+              into residents' lives without adding complexity or demanding
+              significant time. Connection becomes easier, not another
+              obligation.
             </p>
           </div>
 
@@ -145,19 +114,43 @@ const description =
             <h3
               class="font-display text-foreground text-xl leading-tight md:text-2xl"
             >
-              Prototype, pilot, then a framework you can keep.
+              Design for handover from the start.
             </h3>
             <p class="text-muted-foreground mt-3 text-base leading-relaxed">
-              Engagements end with a programme your team can run in other
-              buildings — not a dependency on ours.
+              Every element of the pilot is designed with the end in mind. The
+              goal is not a programme that residents depend on, but a system
+              they gradually take ownership of. By the time Ochakai leaves, the
+              conditions for connection are already in place.
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <p class="text-muted-foreground mt-16 text-base italic">
-          Open to collaborating with practitioners, housing organisations, and
-          researchers working on urban belonging.
+  <!-- Open to collaboration -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
+        >
+          Open to collaboration
         </p>
+        <p
+          class="font-display text-foreground text-2xl leading-snug md:text-[28px]"
+        >
+          Ochakai welcomes conversations with housing organisations,
+          municipalities, researchers, and practitioners working on urban
+          belonging, liveability, and residential community building.
+        </p>
+
+        <a
+          href="/contact"
+          class="text-foreground hover:text-primary mt-10 inline-flex items-center gap-2 text-base font-medium transition-colors"
+        >
+          Get in touch →
+        </a>
       </div>
     </div>
   </section>

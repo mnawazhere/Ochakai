@@ -5,7 +5,7 @@ import { EXTERNAL_LINKS } from '@/constants/external-links';
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
+  { label: 'Offer', href: '/offer' },
   { label: 'About', href: '/about' },
   { label: 'Journal', href: '/journal' },
   { label: 'Contact', href: '/contact' },
@@ -25,8 +25,8 @@ const Footer = () => {
               className="text-muted-foreground mt-6 max-w-sm text-base leading-relaxed"
               lang="en"
             >
-              Activating urban connections — one quiet gathering at a time. Based
-              in The Hague.
+              Activating urban connections, one step at a time. Based in The
+              Hague.
             </p>
             <a
               href={EXTERNAL_LINKS.LINKEDIN}
@@ -79,7 +79,7 @@ const Footer = () => {
             © {year} Ochakai. お茶会. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm" lang="ja">
-            活気あふれる都市の繋がりを
+            都市にいながら、つながりを感じる日常を
           </p>
         </div>
       </div>

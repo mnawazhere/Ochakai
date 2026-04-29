@@ -1,0 +1,294 @@
+---
+import { CtaBand } from '@/components/sections/cta-band';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const description =
+  'The Neighbour Connection Pilot — a structured, time-bound pilot that gives housing organisations a replicable system for everyday neighbour connection, one residents continue running independently after the pilot ends.';
+---
+
+<DefaultLayout title="Offer | Ochakai" description={description}>
+  <!-- Page intro -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28 lg:py-32">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.18em] uppercase"
+        >
+          Offer — オファー
+        </p>
+        <h1
+          class="font-display text-foreground text-4xl leading-[1.08] tracking-tight md:text-5xl lg:text-[56px] lg:leading-[1.05]"
+        >
+          Neighbour Connection Pilot
+        </h1>
+        <p
+          class="font-display text-muted-foreground mt-6 text-xl leading-snug italic md:text-2xl"
+        >
+          Building the conditions for resident-led connection in residential
+          communities.
+        </p>
+        <div
+          class="text-foreground mt-10 space-y-6 text-lg leading-relaxed md:text-xl"
+        >
+          <p>
+            This is a structured, time-bound pilot that gives housing
+            organisations a replicable system for everyday neighbour connection.
+            One that residents can continue running independently after the
+            pilot ends.
+          </p>
+          <p class="text-muted-foreground">
+            It is not an event series. It is a system activation process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it is for -->
+  <section class="border-border/60 bg-card border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.16em] uppercase"
+        >
+          Who it is for
+        </p>
+        <h2
+          class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px]"
+        >
+          Housing organisations and municipalities looking for lasting results.
+        </h2>
+        <p class="text-foreground mt-8 text-lg leading-relaxed md:text-xl">
+          For housing organisations and municipalities that want to strengthen
+          social cohesion in one or more residential buildings, and are looking
+          for an approach that produces lasting results rather than short-term
+          activity.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why it works -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.16em] uppercase"
+        >
+          Why it works
+        </p>
+        <h2
+          class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px]"
+        >
+          Designed for handover, not dependency.
+        </h2>
+        <div
+          class="text-foreground mt-10 space-y-6 text-lg leading-relaxed md:text-xl"
+        >
+          <p>
+            Most community interventions create dependency on an external
+            organiser. When the programme ends, the activity stops.
+          </p>
+          <p>
+            Ochakai is designed differently. The pilot introduces lightweight
+            structures that lower the barrier for residents to connect naturally
+            and gradually transfers ownership to residents themselves. By the
+            time the pilot ends, the system belongs to the community, not to
+            Ochakai.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What the pilot includes — 6-step infograph -->
+  <section class="border-border/60 bg-card border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-4xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.16em] uppercase"
+        >
+          What the pilot includes
+        </p>
+        <h2
+          class="font-display text-foreground mb-14 text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px] lg:leading-[1.08]"
+        >
+          A six-stage system for neighbour connection.
+        </h2>
+
+        <ol class="space-y-4">
+          {
+            [
+              {
+                n: '01',
+                title: 'Context Understanding',
+                body: 'A short assessment of the building or neighbourhood context, identifying existing social dynamics, physical touchpoints, and barriers to everyday interaction.',
+              },
+              {
+                n: '02',
+                title: 'Co-Designed Interaction Setup',
+                body: "Selection of appropriate connection formats based on context, and design of a simple participation structure that fits naturally into residents' everyday lives.",
+              },
+              {
+                n: '03',
+                title: 'Connection Moments',
+                body: '2–4 gatherings or shared moments, adapted to the specific context and designed to lower the barrier for first interaction between residents.',
+              },
+              {
+                n: '04',
+                title: 'Communication Layer',
+                body: 'Setup of a simple communication channel — digital or offline — with templates to support ongoing neighbour updates and everyday coordination.',
+              },
+              {
+                n: '05',
+                title: 'Continuity Structure',
+                body: 'A lightweight system to support continued interaction after the pilot ends, including an optional resident ambassador or contact point model to help sustain activity independently.',
+              },
+              {
+                n: '06',
+                title: 'Reflection & Learning',
+                body: 'A short summary of what emerged during the pilot, with insights and recommendations for continuation or scaling across other buildings in the portfolio.',
+              },
+            ].map((step) => (
+              <li class="border-border/70 bg-background flex gap-6 border p-6 md:gap-8 md:p-8">
+                <div class="text-muted-foreground shrink-0 text-sm font-medium tracking-[0.18em]">
+                  {step.n}
+                </div>
+                <div>
+                  <h3 class="font-display text-foreground text-xl leading-tight tracking-tight md:text-2xl">
+                    {step.title}
+                  </h3>
+                  <p class="text-muted-foreground mt-3 text-base leading-relaxed">
+                    {step.body}
+                  </p>
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+
+        <div class="mt-10 flex justify-center">
+          <div
+            class="bg-primary text-primary-foreground inline-flex items-center px-6 py-3 text-base font-medium tracking-wide"
+          >
+            Pilot ends. System stays.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Format -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-4xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.16em] uppercase"
+        >
+          Format
+        </p>
+        <dl class="grid gap-8 md:grid-cols-2 md:gap-12">
+          <div class="border-primary/30 border-l-2 pl-6">
+            <dt
+              class="text-muted-foreground text-xs font-medium tracking-[0.12em] uppercase"
+            >
+              Duration
+            </dt>
+            <dd class="text-foreground mt-2 text-lg leading-relaxed">
+              8–12 weeks, adaptable to context
+            </dd>
+          </div>
+          <div class="border-primary/30 border-l-2 pl-6">
+            <dt
+              class="text-muted-foreground text-xs font-medium tracking-[0.12em] uppercase"
+            >
+              Scale
+            </dt>
+            <dd class="text-foreground mt-2 text-lg leading-relaxed">
+              Single building or small cluster of buildings
+            </dd>
+          </div>
+          <div class="border-primary/30 border-l-2 pl-6">
+            <dt
+              class="text-muted-foreground text-xs font-medium tracking-[0.12em] uppercase"
+            >
+              Operational burden on partner
+            </dt>
+            <dd class="text-foreground mt-2 text-lg leading-relaxed">Low</dd>
+          </div>
+          <div class="border-primary/30 border-l-2 pl-6">
+            <dt
+              class="text-muted-foreground text-xs font-medium tracking-[0.12em] uppercase"
+            >
+              Approach
+            </dt>
+            <dd class="text-foreground mt-2 text-lg leading-relaxed">
+              Embedded, contextual, iterative
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it leaves behind -->
+  <section class="border-border/60 bg-card border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.16em] uppercase"
+        >
+          What it leaves behind
+        </p>
+        <p
+          class="font-display text-foreground text-2xl leading-snug md:text-3xl lg:text-[36px] lg:leading-[1.2]"
+        >
+          A resident-led system your organisation can replicate, without
+          ongoing dependency on external facilitation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interested in a pilot? -->
+  <section class="border-border/60 border-b">
+    <div class="container py-20 md:py-28">
+      <div class="mx-auto max-w-3xl">
+        <p
+          class="text-muted-foreground mb-6 text-xs font-medium tracking-[0.16em] uppercase"
+        >
+          Interested in a pilot?
+        </p>
+        <h2
+          class="font-display text-foreground text-3xl leading-tight tracking-tight md:text-4xl lg:text-[44px]"
+        >
+          We're seeking pilot partners.
+        </h2>
+        <div
+          class="text-foreground mt-10 space-y-6 text-lg leading-relaxed md:text-xl"
+        >
+          <p>
+            Ochakai is currently seeking pilot partnerships with housing
+            organisations and municipalities. We are looking for partners with
+            an active interest in liveability and tenant wellbeing, open to
+            co-designing a structured pilot in one or two buildings.
+          </p>
+          <p>
+            We bring the methodology, the facilitation, and the learning
+            framework. You bring the context, the residents, and a shared
+            commitment to understanding what works and what persists.
+          </p>
+        </div>
+
+        <a
+          href="/contact"
+          class="text-foreground hover:text-primary mt-12 inline-flex items-center gap-2 text-base font-medium transition-colors"
+        >
+          Get in touch →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</DefaultLayout>

@@ -1,18 +1,28 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
+import { AboutTeaser } from '@/components/sections/about-teaser';
 import { CtaBand } from '@/components/sections/cta-band';
 import { Hero } from '@/components/sections/hero';
-import { Impact } from '@/components/sections/impact';
-import { Mission } from '@/components/sections/mission';
-import { ServicesTeaser } from '@/components/sections/services-teaser';
+import { HowItWorks } from '@/components/sections/how-it-works';
+import { Observations } from '@/components/sections/observations';
+import { OurWork } from '@/components/sections/our-work';
+import { PilotAtAGlance } from '@/components/sections/pilot-at-a-glance';
+import { ProofItWorks } from '@/components/sections/proof-it-works';
+import { WhoWeWorkWith } from '@/components/sections/who-we-work-with';
+import { WhyThisMatters } from '@/components/sections/why-this-matters';
 import DefaultLayout from '@/layouts/DefaultLayout.astro';
 ---
 
 <DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <Hero />
-  <Mission />
-  <ServicesTeaser />
-  <Impact />
+  <OurWork />
+  <WhyThisMatters />
+  <HowItWorks />
+  <ProofItWorks />
+  <Observations />
+  <PilotAtAGlance />
+  <WhoWeWorkWith />
+  <AboutTeaser />
   <CtaBand />
 </DefaultLayout>
